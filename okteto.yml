@@ -1,6 +1,6 @@
 build:
   franciscomj0398:
-    image: okteto.dev/adsoftsito:latest
+    image: okteto.dev/franciscomj0398:latest
 
 deploy:
   - okteto build # build the image with the latest code

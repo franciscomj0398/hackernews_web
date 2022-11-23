@@ -11,3 +11,4 @@ python-decouple
 requests
 pillow
 numpy
+django-health-check

@@ -25,7 +25,7 @@ SECRET_KEY = '8%8k9+m#$y59hz5oeu-+2$gizize=yf#_m0(938ggnme(_1s-+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,9 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'links',
+    'ai',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -138,3 +141,5 @@ AUTHENTICATION_BACKENDS = [
     'graphql_jwt.backends.JSONWebTokenBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True

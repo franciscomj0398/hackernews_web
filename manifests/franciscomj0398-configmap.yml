@@ -10,4 +10,4 @@ data:
   DEV_USER: yilmjpoq
   DEV_PASSWORD: BwiPQZ0XoUHrI9jX_JNApXzT-rlMecd2
   DEV_HOST: heffalump.db.elephantsql.com
-  DEV_PORT: "5432"
+  DEV_PORT: 5432
